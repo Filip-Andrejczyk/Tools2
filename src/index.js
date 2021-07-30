@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import "./main.scss";
-import html from "./index.html"; //potrzebne to?l
+import html from "./index.html"; //potrzebne to?
 
 function component() {
     const element = document.createElement('div');
