@@ -3,4 +3,17 @@
   \********************************************************************************************************/
 body {
   background: red;
+  margin: 30px;
+}
+
+.my-container {
+  border: 1px solid black;
+}
+
+.my-row {
+  border: 3px solid blue;
+}
+
+.my-col {
+  border: 3px dotted green;
 }
