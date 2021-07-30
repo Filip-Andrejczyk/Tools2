@@ -1,4 +1,6 @@
 import _ from 'lodash';
+import "./main.css";
+import html from "./index.html"; //potrzebne to?
 
 function component() {
     const element = document.createElement('div');
@@ -9,4 +11,4 @@ function component() {
     return element;
   }
   
-  document.body.appendChild(component());
+document.body.appendChild(component());
