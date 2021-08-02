@@ -5,13 +5,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: "development",
   entry: "./src/index.js",
+  devServer: {open: true},
+  devtool: 'source-map',
   output: {
-    filename: "main.js",
+    filename: "boundle.js",
     path: path.resolve(__dirname, "dist"),
   },
   plugins: [new MiniCssExtractPlugin(), 
-    new HtmlWebpackPlugin({template: './src/index.html',
-                           filename: './index.html'})],
+            new HtmlWebpackPlugin({template: './src/index.html', filename: './index.html'})
+            //new webpack.SourceMapDevToolPlugin({})
+          ],
   module: {
     rules: [
       {
@@ -21,6 +24,10 @@ module.exports = {
       {
         test: /\.html$/i,
         loader: "html-loader",
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },

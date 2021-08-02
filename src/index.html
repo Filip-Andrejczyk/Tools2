@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choroszcz Studio Enternaiment</title>
+    <title>Choroszcz Studio Entertiment</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
+ <script src="jquery-3.6.0.min.js"></script>
     <div class="container my-container">
         <div class="row my-row">
             <div class="col-md my-col">
@@ -30,13 +31,19 @@
           </div>
     </div>
     <div class="obrazki">
-      <div class="konon">
-        <img src="./asserts/pan-krzysztof.jpg">
-      </div>
-      <div class="major">
-        <img src="./asserts/pan-major.jpg">
+      <div class="row no-gutters">
+        <div id="konono" class="col-md konon">
+          <img id="ksiek" src="./assets/pan-krzysztof.jpg">
+        </div>
+        <div id="majoro" class="col-md konon">
+          <img id="major" src="./assets/pan-major.jpg">
+       </div>
       </div>
     </div>
+    <div class="tex-center">
+      <button id="przycisk" type="button">Zmien</button>
+    </div>
+    
     
 </body>
 </html>
