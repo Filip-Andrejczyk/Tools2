@@ -18,3 +18,26 @@ body {
 .my-col{
   border: 3px dotted $col-color;
 }
+.obrazki{
+  border: 4px solid $col-color;
+  //padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+  width: 850px;
+  border-radius: 15px;
+}
+.konon{
+flex:50%;
+border: 4px solid $col-color;
+}
+.major{
+flex: 50%;
+border: 4px solid $col-color;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
