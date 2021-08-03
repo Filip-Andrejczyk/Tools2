@@ -9,9 +9,9 @@ body {
   background: $body-color;
   margin: 30px;
 }
-
 .my-container{
   border: 1px solid $container-color;
+  width: auto;
 }
 .my-row{
   border: 3px solid $row-color;
@@ -26,17 +26,40 @@ body {
   justify-content: center;
   margin-top: 10px;
   width: auto;
-  //padding: auto;
+  position: relative;
+  visibility: visible;
+
+  &--hide {
+    #majoro {
+      display: none;
+    }
+    #konono{
+      display: none;
+    }
+  }
+  &--hidesiema{
+    #theImg{
+      display: none;
+    }
+  }
 }
 .konon{
 //flex:50%;
 border: 4px solid $col-color;
-
+visibility: visible;
 }
 .major{
 //flex: 50%;
 border: 4px solid $col-color;
-
+visibility: visible;
+}
+.wyskakuje{
+  border: 4px solid $col-color;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: auto;
+  position: absolute;
 }
 .tex-center{
   text-align: center;
@@ -44,4 +67,9 @@ border: 4px solid $col-color;
 img{
   width: 100%;
   height: 100%;
+}
+.licznik{
+  margin-top: 5px;
+  text-align: center;
+  font-size: 30px;
 }
