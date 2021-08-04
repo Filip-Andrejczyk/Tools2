@@ -8,7 +8,6 @@ import Ksiek from './assets/pan-krzysztof.jpg';
 import Major from './assets/pan-major.jpg';
 import siema from './assets/siema.jpg';
 
-
 function component()
 {
     const element = document.createElement('div');
